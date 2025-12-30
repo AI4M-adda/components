@@ -1,5 +1,6 @@
+import { Button } from '@rgba/ui/components/button'
 import { createFileRoute } from '@tanstack/react-router'
-import { Button } from '@rgba/ui/components'
+
 export const Route = createFileRoute('/')({ component: App })
 
 function App() {

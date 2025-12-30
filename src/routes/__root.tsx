@@ -40,6 +40,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           config={{
             position: 'bottom-right',
           }}
+          eventBusConfig={{
+            connectToServerBus: true,
+            port: 43005,
+          }}
           plugins={[
             {
               name: 'Tanstack Router',
