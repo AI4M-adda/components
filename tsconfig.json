@@ -1,6 +1,7 @@
 {
   "extends": "@rgba/typescript-config/tanstack-start.json",
   "compilerOptions": {
+    "allowJs": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
