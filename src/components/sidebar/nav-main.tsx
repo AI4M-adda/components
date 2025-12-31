@@ -16,6 +16,7 @@ import {
   SidebarMenuSubItem,
 } from '@rgba/ui/components/sidebar'
 import { useSearchForm } from '@components/store/useSearchForm'
+import { Link } from '@tanstack/react-router'
 
 export function NavMain({
   items,
@@ -57,9 +58,9 @@ export function NavMain({
                   {item.items?.map((subItem) => (
                     <SidebarMenuSubItem key={subItem.title}>
                       <SidebarMenuSubButton asChild>
-                        <a href={`/${item.url}/${subItem.url}`}>
+                        <Link to={`/${item.url}/${subItem.url}`}>
                           <span>{subItem.title}</span>
-                        </a>
+                        </Link>
                       </SidebarMenuSubButton>
                     </SidebarMenuSubItem>
                   ))}
